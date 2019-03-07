@@ -1,0 +1,312 @@
+/* 
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+/*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* html, html:before, html:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+embed,
+iframe,
+object,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+audio {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table td,
+table th {
+  padding: 0;
+  text-align: left;
+}
+
+body {
+  color: #444;
+  font-size: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.h1,
+.h2 {
+  line-height: 1.1;
+}
+
+.h3,
+.h4 {
+  line-height: 1.3;
+}
+
+.h1 {
+  font-size: 400%;
+  letter-spacing: -2px;
+}
+
+.h2 {
+  font-size: 250%;
+  letter-spacing: -1px;
+}
+
+.h3 {
+  font-size: 200%;
+}
+
+.h4 {
+  font-size: 180%;
+}
+
+.h5 {
+  font-size: 130%;
+}
+
+/* .fixed {
+    // font-family: $fixed-font-family;
+    // font-size: $fixed-font-size;
+    // line-height: $fixed-line-height;
+}
+ */
+.quiet {
+  color: cornflowerblue;
+}
+
+.loud, .bold {
+  color: tomato;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.block-margins {
+  margin: 1em 0;
+}
+
+.unordered-list {
+  list-style-type: disc;
+}
+
+.ordered-list {
+  list-style: decimal;
+}
+
+.site-nav {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  background: #f4f4f4;
+  -webkit-box-shadow: 0 0 5px 0 #6f6f6f;
+          box-shadow: 0 0 5px 0 #6f6f6f;
+  color: #a9a9a9;
+  position: relative;
+}
+
+.site-nav .list-view {
+  display: none;
+}
+
+.site-nav .mobile-menu-icon {
+  width: 1rem;
+}
+
+.site-nav .mobile-settings-icon {
+  width: 8px;
+}
+
+.site-nav .icon-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 690px) {
+  .site-nav .list-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .site-nav .list-view li {
+    margin: 0 1rem;
+  }
+  .site-nav .icon-view {
+    display: none;
+  }
+}
+
+.page-header {
+  padding: calc(2rem + 3vh) 0;
+  background: #f93c27;
+  color: white;
+  text-align: center;
+}
+
+.page-header img {
+  max-width: 298px;
+  width: 60%;
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+  font-size: calc(20px + 3vw);
+  line-height: calc(20px + 3vw);
+}
+
+.page-header p {
+  font-size: calc(12px + 1vw);
+  color: #f5b1b1;
+}
+
+.payment {
+  max-width: 620px;
+  margin: 2rem auto;
+}
+
+.payment header {
+  background-color: #50c7c1;
+  padding: 1.5rem 0;
+}
+
+.small-heading {
+  font-size: calc(0.5rem + 2vw);
+  text-transform: uppercase;
+}
+
+.large-heading {
+  font-size: calc(2rem + 2vw);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-center-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.credit-cards {
+  max-width: 1.5rem;
+}
+
+.card {
+  width: 2.5rem;
+  margin: 0 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

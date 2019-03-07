@@ -1,0 +1,16 @@
+UNIX Commands
+ls
+pwd
+cd ../parent ./current
+
+GIT Commands
+git clone   (download a repo locally)
+
+
+CLI - Command Line Interface
+GIT
+
+
+
+FEW Development Pipeline
+VSCode > img,js,css,index > ftp Static site dev Pipeline
